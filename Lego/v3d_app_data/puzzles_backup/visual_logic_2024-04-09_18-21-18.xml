@@ -1,11 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="656" scrolly="357" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="-1713.9652213108775" scrolly="-1446.8986345169506" scale="0.8517058365613385">
+  <tab name="main" type="MainTab" active="true" scrollx="-1320.936558942789" scrolly="-1091.0276789746267" scale="0.6935539619171481">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="dE[?T4S)2UBr=0^oe?.t" type="">l</variable>
       <variable id="vXZ`]Q:xoRnf0[V!MyRZ" type="">cubes</variable>
-      <variable id="`$4N/}x^bV0q_XMA67Q5" type="">dictionary</variable>
       <variable id="ESWf[U[KKW8zWJx$KKC$" type="">x</variable>
+      <variable id="`$4N/}x^bV0q_XMA67Q5" type="">dictionary</variable>
       <variable id=");W%unhS)H0yQN+J/B?{" type="">history</variable>
       <variable id=")-`=alrJ~YNbo!)q-Q;D" type="">k</variable>
       <variable id="xY?RfpGio-z_gVRKvv*/" type="">var</variable>
@@ -14,7 +14,6 @@
       <variable id="5I%(n[3]js.H+JjzT`{D" type="">obj</variable>
       <variable id="zwbO4C;?xuf{7;c6%)b=" type="">obj1</variable>
       <variable id="#9{x8WVq1z}(9Yap#,r`" type="">o</variable>
-      <variable id="%m,yB/joRN4WXfhd+#6X" type="">loaded_data</variable>
       <variable id="L85U|N9ln{P=3zlCDm86" type="">z</variable>
       <variable id="25*UfRI+3?2*n/;C;#ml" type="">m</variable>
       <variable id="K#Dksf~][HS,(2Fst*(o" type="">y</variable>
@@ -1718,7 +1717,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="Gw6VlY+ZPXWA/j|wTYE3" x="2021" y="1616">
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="Gw6VlY+ZPXWA/j|wTYE3" x="1930" y="1570">
       <field name="ELEMENT">button</field>
       <field name="MODE">TO</field>
       <field name="PARENT">FALSE</field>
@@ -1791,7 +1790,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id=")b=sd_nC(@rAb/otnVm=">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT">VARS['history']=JSON.stringify(VARS['dictionary']);&#10;localStorage.setItem("vstorage",VARS['history']);&#10;for (var key in dictionary) {&#10;    if (dictionary.hasOwnProperty(key)) {&#10;        var value = dictionary[key];&#10;        console.log("Key: " + key + ", Value: " + value);&#10;        // You can perform operations with the key and value here&#10;    }&#10;}</field>
+                              <field name="TEXT">VARS['history']=JSON.stringify(VARS['dictionary']);&#10;localStorage.setItem("vstorage",VARS['history']);&#10;alert('saved');</field>
                             </shadow>
                           </value>
                           <next>
@@ -1894,38 +1893,29 @@
                         </shadow>
                       </value>
                       <statement name="DO">
-                        <block type="variables_set" id="{[{P!tN910P2lrkW;5]b">
-                          <field name="VAR" id="%m,yB/joRN4WXfhd+#6X">loaded_data</field>
-                          <value name="VALUE">
-                            <block type="readJSON" id="5+`7|:D1l|Wry-as1.b9">
-                              <value name="TEXT">
-                                <block type="SCORM/LMSGetValue" id="k}$7e(k%Q_^R~~%l}]aL">
-                                  <value name="ELEMENT">
-                                    <shadow type="SCORM/dataModelElements" id="l`u9q:JZC/I=_:GViLlw">
-                                      <field name="ELEMENT">cmi.core.lesson_status</field>
-                                    </shadow>
-                                    <block type="text" id="6wQJ3WLvZYljLLv%L3Ud">
-                                      <field name="TEXT">cmi.suspend_data</field>
-                                    </block>
-                                  </value>
-                                </block>
-                              </value>
-                            </block>
+                        <block type="execScript" id="w4v9_UnKw%wL}%,NG#?A">
+                          <value name="TEXT">
+                            <shadow type="textMultiline" id="(j;MyMKaDvn3rwLz7[-2">
+                              <field name="HIGHLIGHT_MODE">javascript</field>
+                              <field name="TEXT">VARS['history']=JSON.stringify(VARS['dictionary']);&#10;localStorage.setItem("vstorage",VARS['history']);&#10;alert('saved');</field>
+                            </shadow>
                           </value>
                           <next>
-                            <block type="controls_whileUntil" id="7z?:O6*9Zqg*Rif|k[7+">
-                              <field name="MODE">WHILE</field>
-                              <value name="BOOL">
-                                <block type="logic_negate" id=";]$5$)C-ARB[BbUH=@f+">
-                                  <value name="BOOL">
-                                    <block type="dictIsEmpty" id="B$$%~t_dq9mPQWRTZyh:">
-                                      <value name="DICT">
-                                        <block type="variables_get" id="b}LBKmMi?S~l^;.oc7km">
-                                          <field name="VAR" id="%m,yB/joRN4WXfhd+#6X">loaded_data</field>
-                                        </block>
-                                      </value>
-                                    </block>
-                                  </value>
+                            <block type="SCORM/LMSSetValue" id="N3Wi^2kG_{6vgby1!2B]">
+                              <value name="ELEMENT">
+                                <shadow type="SCORM/dataModelElements">
+                                  <field name="ELEMENT">cmi.core.lesson_status</field>
+                                </shadow>
+                                <block type="text" id="edqiwH}?G8x(yMV+={IF">
+                                  <field name="TEXT">cmi.suspend_data</field>
+                                </block>
+                              </value>
+                              <value name="VALUE">
+                                <shadow type="text">
+                                  <field name="TEXT">passed</field>
+                                </shadow>
+                                <block type="variables_get" id="~C%vGlFJEe^;eA1oc(]K">
+                                  <field name="VAR" id=");W%unhS)H0yQN+J/B?{">history</field>
                                 </block>
                               </value>
                             </block>
