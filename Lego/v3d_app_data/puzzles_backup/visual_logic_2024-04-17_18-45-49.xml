@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="648.9999999999999" scrolly="357.00000000000006" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="-1385.492613387602" scrolly="-1361.825971195266" scale="0.7443447048952189">
+  <tab name="main" type="MainTab" active="true" scrollx="-1064.0117955416058" scrolly="-961.7224409689356" scale="0.5722573929089407">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="dE[?T4S)2UBr=0^oe?.t" type="">l</variable>
       <variable id="vXZ`]Q:xoRnf0[V!MyRZ" type="">cubes</variable>
@@ -1915,7 +1915,7 @@
                                             <block type="text_count" id="HV,v{:W^MNQijVAEEHcZ">
                                               <value name="SUB">
                                                 <block type="text" id="+x,,ISoyZX]4}p[N$%~V">
-                                                  <field name="TEXT">Cylinder.001</field>
+                                                  <field name="TEXT">Cube</field>
                                                 </block>
                                               </value>
                                               <value name="TEXT">
@@ -1949,7 +1949,7 @@
                                             <block type="text_count" id="$fM|fN@g-{+ilWo/3nUl">
                                               <value name="SUB">
                                                 <block type="text" id="jp%^@{24h%?/!IS20y0/">
-                                                  <field name="TEXT">6cube</field>
+                                                  <field name="TEXT">Rectangle</field>
                                                 </block>
                                               </value>
                                               <value name="TEXT">
@@ -2147,5 +2147,5 @@
       </next>
     </block>
   </tab>
-  <editorsettings viewport-x="938.8000305175781" viewport-y="26.399986267089844" viewport-w="595.2" viewport-h="395" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="938.8000305175781" viewport-y="26.399986267089844" viewport-w="595.2" viewport-h="395" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
