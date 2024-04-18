@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="648.9999999999999" scrolly="357.00000000000006" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="-513.7230154258573" scrolly="-108.54200744051536" scale="0.5528711550834439">
+  <tab name="main" type="MainTab" active="true" scrollx="-657.4624393343065" scrolly="-572.9133562929046" scale="0.5867794246749007">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="dE[?T4S)2UBr=0^oe?.t" type="">l</variable>
       <variable id="vXZ`]Q:xoRnf0[V!MyRZ" type="">cubes</variable>
